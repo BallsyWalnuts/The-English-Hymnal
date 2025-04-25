@@ -113,4 +113,10 @@ bass = \relative {
             }
         >>
     >>
+    \layout {
+        \context {
+            \Staff 
+            \remove Time_signature_engraver
+        }
+    }
 }
