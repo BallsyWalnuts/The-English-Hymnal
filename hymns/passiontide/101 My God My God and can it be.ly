@@ -23,6 +23,11 @@ soprano = \relative c' {
 
 alto = \relative c' { % Alto melody
     \global
+    \stemUp
+    g4 (a) b \stemDown fs' | e2 g4 (fs) | e2 e4 (ds) | e2. \bar "||" c4 |
+    b e fs e | d (fs) fs2 | ds2. \bar "||" g4 | fs e ds d | 
+    e (ds) e2 | fs2. \bar "||" g4 | g fs8 e d4 e | cs (e2) ds4 | e1 \bar "."
+    c2 b |
 
 }
 
