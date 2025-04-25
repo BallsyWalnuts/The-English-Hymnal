@@ -33,6 +33,10 @@ alto = \relative c' { % Alto melody
 
 tenor = \relative {
     \global
+    e4 (fs) g b | g (a) b2 | c4 (a) b2 | g2. \bar "||" a4 |
+    g g fs as | b2. as4 | b2. \bar "||" b4 | b e, fs b |
+    c2 b4 (cs) | ds2. \bar "||" d4 | d c d b | cs2 fs, | g1 \bar "."
+    a2 gs |
 }
 
 bass = \relative {
