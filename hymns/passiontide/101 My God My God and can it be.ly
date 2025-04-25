@@ -18,7 +18,7 @@ soprano = \relative c' {
     e2 b'4 b | c2 b | a4 (e) g (fs) | e2. \bar "||" e4 | 
     g e b' cs | d (b) d (cs) | b2. \bar "||" b4 | b as b fs |
     a2 g | fs2. \bar "||" b4 | b a g e | g2 fs | e1 \fermata \bar "."
-    e2 e |
+    \cadenzaOn e1 e \bar ".."
 }
 
 alto = \relative c' { % Alto melody
@@ -27,7 +27,7 @@ alto = \relative c' { % Alto melody
     g4 (a) b \stemDown fs' | e2 g4 (fs) | e2 e4 (ds) | e2. \bar "||" c4 |
     b e fs e | d (fs) fs2 | ds2. \bar "||" g4 | fs e ds d | 
     e (ds) e2 | fs2. \bar "||" g4 | g fs8 e d4 e | cs (e2) ds4 | e1 \bar "."
-    c2 b |
+    c1 b |
 
 }
 
@@ -36,7 +36,7 @@ tenor = \relative {
     e4 (fs) g b | g (a) b2 | c4 (a) b2 | g2. \bar "||" a4 |
     g g fs as | b2. as4 | b2. \bar "||" b4 | b e, fs b |
     c2 b4 (cs) | ds2. \bar "||" d4 | d c d b | cs2 fs, | g1 \bar "."
-    a2 gs |
+    \cadenzaOn a1 gs \bar ".."
 }
 
 bass = \relative {
@@ -44,7 +44,7 @@ bass = \relative {
     e2 e4 d | c2 g | a4 (c) b2 | e2. \bar "||" a,4 |
     e' e d cs | b (d) fs2 | b,2. \bar "||" e4 | d cs b b |
     a2 e' | b2. \bar "||" g4 | g a b g | a2 b | e1 \fermata \bar "."
-    a,2 e' |
+    a,1 e' |
 }
 
 \score {
