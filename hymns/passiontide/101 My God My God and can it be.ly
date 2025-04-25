@@ -14,15 +14,22 @@ global = {
 }
 
 soprano = \relative c' {
-    \global % Soprano melody
+    \global
     e2 b'4 b | c2 b | a4 (e) g (fs) | e2. \bar "||" e4 | 
     g e b' cs | d (b) d (cs) | b2. \bar "||" b4 | b as b fs |
     a2 g | fs2. \bar "||" b4 | b a g e | g2 fs | e1 \fermata \bar "."
+    % Cadenza is turned on here in order to format the final
+    % Amen the way that I want - two whole notes with no bar
+    % between then
     \cadenzaOn e1 e \bar ".."
 }
 
-alto = \relative c' { % Alto melody
+alto = \relative c' {
     \global
+    % Stems are turned upward on the three intial notes of the 
+    % harmony because when pointed down they encroach on the 
+    % text of the lyrics. They are turned back down on the 
+    % first f-sharp
     \stemUp
     g4 (a) b \stemDown fs' | e2 g4 (fs) | e2 e4 (ds) | e2. \bar "||" c4 |
     b e fs e | d (fs) fs2 | ds2. \bar "||" g4 | fs e ds d | 
