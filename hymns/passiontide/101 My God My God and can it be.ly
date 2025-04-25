@@ -17,7 +17,8 @@ soprano = \relative c' {
     \global % Soprano melody
     e2 b'4 b | c2 b | a4 (e) g (fs) | e2. \bar "||" e4 | 
     g e b' cs | d (b) d (cs) | b2. \bar "||" b4 | b as b fs |
-    a2 g | fs2. \bar "||" b4 | b a g e | g2 fs | e1 \fermata |
+    a2 g | fs2. \bar "||" b4 | b a g e | g2 fs | e1 \fermata \bar "."
+    e2 e |
 }
 
 alto = \relative c' { % Alto melody
@@ -84,6 +85,7 @@ bass = \relative {
             As though no oth -- er sins there were,
             That was to him who bears the world 
             A load that he could scarce -- ly bear.
+            Am -- en.
         }
 
         \new Staff <<
