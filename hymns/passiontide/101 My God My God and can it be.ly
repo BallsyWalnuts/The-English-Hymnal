@@ -32,6 +32,10 @@ tenor = \relative {
 
 bass = \relative {
     \global
+    e2 e4 d | c2 g | a4 (c) b2 | e2. \bar "||" a,4 |
+    e' e d cs | b (d) fs2 | b,2. \bar "||" e4 | d cs b b |
+    a2 e' | b2. \bar "||" g4 | g a b g | a2 b | e1 \fermata \bar "."
+    a,2 e' |
 }
 
 \score {
