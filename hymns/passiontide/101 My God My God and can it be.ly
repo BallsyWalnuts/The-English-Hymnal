@@ -45,7 +45,46 @@ bass = \relative {
                 \alto
             }
         >>
-        % This is where lyrics go
+        
+        \new Lyrics \lyricsto "soprano" {
+            \set stanza = "1."
+            My God! My God! and can it be
+            That I should sin so light -- ly now,
+            And think no more of ev -- il thoughts
+            Than of the wind that waves the bough?
+        }
+
+        \new Lyrics \lyricsto "soprano" {
+            \set stanza = "2."
+            I walk the earth with light -- some step,
+            Smile at the sun -- shine, breath the air,
+            Do my own will, nor ev -- er heed 
+            Geth -- se -- ma -- ne and thy long prayer.
+        }
+
+        \new Lyrics \lyricsto "soprano" {
+            \set stanza = "3."
+            Shall it be al -- ways thus, O Lord?
+            Wilt thou not work this hour in me
+            The grace thy Pass -- ion mer -- it -- ed,
+            Ha -- tred of self, and love of thee!
+        }
+
+        \new Lyrics \lyricsto "soprano" {
+            \set stanza = "4."
+            Ev -- er when tempt -- ed, make me see,
+            Be -- neath the ol -- ives' moon -- pierced shade,
+            My God, a -- lone, out -- stretched, and bruised,
+            And bleed -- ing, on the earth he made;
+        }
+
+        \new Lyrics \lyricsto "soprano" {
+            \set stanza = "5."
+            And make me feel it was my sin, 
+            As though no oth -- er sins there were,
+            That was to him who bears the world 
+            A load that he could scarce -- ly bear.
+        }
 
         \new Staff <<
             \clef bass 
