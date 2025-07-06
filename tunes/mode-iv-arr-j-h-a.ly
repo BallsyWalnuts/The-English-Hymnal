@@ -16,38 +16,35 @@ cantus = {
 
 soprano = \relative c'' {
     \global
+    \voiceOne
     \set Score.timing = ##f
     \override Stem.direction = #up
     g8 ef g bf c (c) af bf \divisioMinima
     bf c af bf af g f g4 \divisioMaior
     bf8 af f g af g f ef \divisioMinima
-    ef g af bf af g f g4
+    ef g af bf af g f g4 \bar  "||"
 }
 
-bass = {
+alto = \relative c' {
     \global
-    \set Score.timing = ##f
+    \voiceTwo
+    d8 ef4 f g8 af d, 
+    (d) ef4 (ef2) d4
+    (d8) c2 (c4) (c8) (c)
+    d2 c4 bf
+}
+
+tenor = \relative c {
+    \global
 
 }
 
-\score {
-    \new StaffGroup <<
-        \new VaticanaVoice \cantus
-        \new PianoStaff <<
-            \new Staff <<
-                \new Voice <<
-                    \soprano
-                >>
-            >>
-            \new Staff <<
-                \clef "bass"
-            >>
-        >>
-  >>
-  \layout {
-    \context {
-      \Staff
-      \remove Time_signature_engraver
-    }
-  }
+bass = \relative c {
+    \global
+    \voiceFour
+    \set Score.timing = ##f
+    bf8 c4 d ef8 f g 
+    (g) c,4 ef2 bf4
+    (bf8) f'2 c4 (c8)
+    (c8) bf2 af4 g
 }
